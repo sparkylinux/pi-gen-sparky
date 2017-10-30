@@ -1,0 +1,5 @@
+### sparky stable repository
+### used on sparky based on debian stable only
+deb http://sparkylinux.org/repo/ stable main
+deb-src http://sparkylinux.org/repo/ stable main
+

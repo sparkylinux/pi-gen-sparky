@@ -1,0 +1,15 @@
+xserver-xorg-video-fbdev
+xserver-xorg
+xinit
+xserver-xorg-video-fbturbo
+openbox
+lxtask
+menu-xdg
+gksu
+zenity
+xdg-utils
+gvfs-backends
+gvfs-fuse
+lightdm
+gnome-themes-standard-data
+gnome-icon-theme

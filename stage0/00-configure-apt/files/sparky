@@ -1,0 +1,15 @@
+Package: *
+Pin: release o=SparkyLinux,a=stable
+Pin-Priority: 1001
+
+Package: *
+Pin: release o=SparkyLinux,a=testing
+Pin-Priority: 900
+
+Package: *
+Pin: release o=SparkyLinux,a=unstable
+Pin-Priority: 500
+
+Package: *
+Pin: release o=SparkyLinux,a=dde
+Pin-Priority: 900
