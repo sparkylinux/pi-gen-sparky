@@ -5,7 +5,19 @@ if [ -f "${ROOTFS_DIR}/usr/share/applications/pcmanfm-desktop-pref.desktop" ]; t
 fi
 install -m 644 files/pcmanfm-desktop-pref.desktop				${ROOTFS_DIR}/usr/share/applications/
 
-if [ -f "${ROOTFS_DIR}/etc/lightdm/lightdm.conf" ]; then
-	rm -f ${ROOTFS_DIR}/etc/lightdm/lightdm.conf
+#if [ -f "${ROOTFS_DIR}/etc/lightdm/lightdm.conf" ]; then
+#	rm -f ${ROOTFS_DIR}/etc/lightdm/lightdm.conf
+#fi
+#install -m 644 files/lightdm.conf				${ROOTFS_DIR}/etc/lightdm/
+
+if [ -f "${ROOTFS_DIR}/etc/lightdm/lightdm-gtk-greeter.conf" ]; then
+	sed -i -e 's|#background=|background=/opt/artwork/sparky-lightdm.svg|g' ${ROOTFS_DIR}/etc/lightdm/lightdm-gtk-greeter.conf
 fi
-install -m 644 files/lightdm.conf				${ROOTFS_DIR}/etc/lightdm/
+
+if [ -f "${ROOTFS_DIR}/etc/wpa_supplicant/wpa_supplicant.conf" ]; then
+	rm -f ${ROOTFS_DIR}/etc/wpa_supplicant/wpa_supplicant.conf
+fi
+
+#if [ -f "${ROOTFS_DIR}/etc/network/interfaces" ]; then
+#	rm -f ${ROOTFS_DIR}/etc/network/interfaces
+#fi
