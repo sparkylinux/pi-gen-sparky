@@ -7,4 +7,7 @@ elif [ -f /usr/bin/tint2 ]; then
 tint2 &
 fi
 xscreensaver -nosplash &
-(sleep 10; volumeicon) &
+#(sleep 10; volumeicon) &
+(sleep 5; pnmixer) &
+xfce4-volumed &
+thunar --daemon &

@@ -1,3 +1,5 @@
+alsaplayer-gtk
+aria2
 claws-mail
 fbpanel
 galculator
@@ -10,7 +12,6 @@ gufw
 hexchat
 leafpad
 lxinput
-lxmusic
 lxrandr
 lxterminal
 mencoder
@@ -21,8 +22,7 @@ network-manager-gnome
 nitrogen
 obconf
 openbox
-pcmanfm
-radiotray
+pnmixer
 smbclient
 sparky-about
 sparky-aptus
@@ -42,9 +42,7 @@ synaptic
 system-config-printer
 transmission
 ufw
-uget
 ultra-flat-icons
-volumeicon-alsa
 wm-logout
 xarchiver
 xdg-user-dirs
