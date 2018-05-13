@@ -12,7 +12,7 @@ gufw
 hexchat
 leafpad
 lxinput
-lxrandr
+lxpolkit
 lxterminal
 mencoder
 menu
@@ -23,6 +23,7 @@ nitrogen
 obconf
 openbox
 pnmixer
+python-gi
 smbclient
 sparky-about
 sparky-aptus
