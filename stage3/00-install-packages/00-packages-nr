@@ -1,18 +1,7 @@
-xserver-xorg-video-fbdev
-xserver-xorg
-xinit
-xserver-xorg-video-fbturbo
-lxtask
-menu-xdg
-gksu
-zenity
-xdg-utils
-gvfs-backends
-gvfs-fuse
-lightdm
-gnome-themes-standard-data
-gnome-icon-theme
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
+xserver-xorg-video-fbdev xserver-xorg xinit xserver-xorg-video-fbturbo
+lxtask menu-xdg gksu
+netsurf-gtk zenity xdg-utils
+gvfs-backends gvfs-fuse
+lightdm gnome-themes-standard-data gnome-icon-theme
+sparky-about
+sparky-core

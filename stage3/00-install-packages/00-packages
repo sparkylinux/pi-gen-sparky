@@ -1,24 +1,11 @@
-gstreamer1.0-x
-gstreamer1.0-omx-rpi
-gstreamer1.0-omx-generic
-gstreamer1.0-fluendo-mp3
-gstreamer1.0-plugins-base
-gstreamer1.0-plugins-good
-gstreamer1.0-plugins-bad
-gstreamer1.0-plugins-ugly
-gstreamer1.0-alsa
-gstreamer1.0-libav
-gstreamer1.0-tools
-xpdf
-gtk2-engines
-alsa-utils
+gstreamer1.0-x gstreamer1.0-omx gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-alsa gstreamer1.0-libav
+qpdfview gtk2-engines alsa-utils
 desktop-base
 git
 raspberrypi-artwork
+policykit-1
 gvfs
 rfkill
 gldriver-test
 fonts-droid-fallback
-fonts-arkpandora
 fonts-liberation2
-netsurf
