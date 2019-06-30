@@ -1,0 +1,13 @@
+#! /bin/bash
+
+sudo apt update && sudo apt install --reinstall shared-mime-info
+
+#if [ -f /usr/share/mime/mime.cache ]; then
+#sudo rm -f /usr/share/mime/mime.cache
+#fi
+
+#if [ -f /usr/bin/update-mime-database ]; then
+#sudo update-mime-database /usr/share/mime
+#fi
+ 
+exit 0
