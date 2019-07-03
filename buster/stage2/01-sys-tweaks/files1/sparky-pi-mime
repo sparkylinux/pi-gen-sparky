@@ -1,8 +1,11 @@
 #! /bin/bash
 
 sudo dpkg-reconfigure shared-mime-info
+sudo dpkg-reconfigure menu
+#update-menus
 cd /home/pi/.config/openbox
 ./autostart.sh
+openbox --reconfigure
 
 #sudo apt update && sudo apt install --reinstall shared-mime-info
 
