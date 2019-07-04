@@ -7,6 +7,7 @@ rsync -a skel/.config "${ROOTFS_DIR}/home/pi/"
 rsync -a skel/.alsaplayer "${ROOTFS_DIR}/home/pi/"
 cp -a files1/sparky-pi-mime "${ROOTFS_DIR}/usr/bin/"
 cp -a files1/sparky-pi-mime.desktop "${ROOTFS_DIR}/etc/xdg/autostart/"
+cp -a files1/sparky-pi-pswd "${ROOTFS_DIR}/usr/bin/"
 on_chroot << EOF
 chmod +x /etc/skel/.config/openbox/autostart.sh
 chown -R root:root /etc/skel
@@ -17,4 +18,5 @@ chown pi:pi /home/pi/.su-to-rootrc
 chmod +x /home/pi/.config/openbox/autostart.sh
 chmod 755 /home/pi/.config
 chmod +x /usr/bin/sparky-pi-mime
+chmod +x /usr/bin/sparky-pi-pswd
 EOF

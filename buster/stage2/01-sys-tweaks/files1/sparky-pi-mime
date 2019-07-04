@@ -2,7 +2,6 @@
 
 sudo dpkg-reconfigure shared-mime-info
 sudo dpkg-reconfigure menu
-#update-menus
 cd /home/pi/.config/openbox
 ./autostart.sh
 openbox --reconfigure

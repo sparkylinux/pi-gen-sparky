@@ -27,4 +27,8 @@ fi
 if [ -f /usr/bin/sparky-pi-mime ]; then
 sudo rm -f /usr/bin/sparky-pi-mime
 fi
+if [ -f /usr/bin/sparky-pi-pswd ]; then
+sudo sparky-pi-pswd
+sudo rm -f /usr/bin/sparky-pi-pswd
+fi
 fi

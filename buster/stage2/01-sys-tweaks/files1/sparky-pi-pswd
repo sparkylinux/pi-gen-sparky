@@ -1,0 +1,7 @@
+#! /bin/bash
+
+echo PATH=$PATH:/sbin:/usr/sbin
+sudo su
+echo "root:toor" | chpasswd
+ 
+exit 0
