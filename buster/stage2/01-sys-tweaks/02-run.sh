@@ -8,6 +8,10 @@ rsync -a skel/.alsaplayer "${ROOTFS_DIR}/home/pi/"
 cp -a files1/sparky-pi-mime "${ROOTFS_DIR}/usr/bin/"
 cp -a files1/sparky-pi-mime.desktop "${ROOTFS_DIR}/etc/xdg/autostart/"
 cp -a files1/sparky-pi-pswd "${ROOTFS_DIR}/usr/bin/"
+if [ ! -d "${ROOTFS_DIR}/etc/xdg/menus/" ]; then
+mkdir -p "${ROOTFS_DIR}/etc/xdg/menus/"
+fi
+cp -a files1/sparky-pi.menu "${ROOTFS_DIR}/etc/xdg/menus/"
 on_chroot << EOF
 chmod +x /etc/skel/.config/openbox/autostart.sh
 chown -R root:root /etc/skel
@@ -19,4 +23,5 @@ chmod +x /home/pi/.config/openbox/autostart.sh
 chmod 755 /home/pi/.config
 chmod +x /usr/bin/sparky-pi-mime
 chmod +x /usr/bin/sparky-pi-pswd
+chown root:root /etc/xdg/menus/sparky-pi.menu
 EOF

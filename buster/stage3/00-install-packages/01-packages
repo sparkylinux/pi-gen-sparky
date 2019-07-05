@@ -5,6 +5,7 @@ claws-mail
 debi-tool
 galculator
 gexec
+gnome-mplayer
 gpicview
 gscreenshot
 gsimplecal
@@ -19,11 +20,11 @@ lxpolkit
 lxterminal
 menu
 mousepad
-mpv
 network-manager
 network-manager-gnome
 nitrogen
 openbox
+openbox-menu
 pnmixer
 python-gi
 rng-tools5

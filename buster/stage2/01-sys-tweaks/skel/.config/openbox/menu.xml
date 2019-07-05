@@ -1,48 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<openbox_menu xmlns="http://openbox.org/"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://openbox.org/
-                file:///usr/share/openbox/menu.xsd">
-
-<menu id="root-menu" label="Openbox 3">
-  <item label="Files">
-    <action name="Execute"><execute>thunar</execute></action>
-  </item>
-  <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
-  </item>
-  <item label="System Upgrade">
-    <action name="Execute"><execute>remsu sparky-aptus-upgrade</execute></action>
-  </item>
-  <item label="Synaptic">
-    <action name="Execute"><execute>synaptic-pkexec</execute></action>
-  </item>
-  <item label="Terminal emulator">
-    <action name="Execute"><execute>x-terminal-emulator</execute></action>
-  </item>
-  <item label="Run command">
-    <action name="Execute"><execute>gexec</execute></action>
-  </item>
-  <!-- This requires the presence of the 'menu' package to work -->
-  <separator />
-  <menu id="/Debian" />
-  <separator />
-  <menu id="client-list-menu" />
-  <separator />
-  <item label="ObConf">
-    <action name="Execute"><execute>obconf</execute></action>
-  </item>
-  <item label="Reconfigure">
-    <action name="Reconfigure" />
-  </item>
-  <item label="Restart">
-    <action name="Restart" />
-  </item>
-  <separator />
-  <item label="LogOut">
-    <action name="Execute"><execute>wm-logout</execute></action>
-  </item>
-</menu>
-
-</openbox_menu>
+<openbox_menu><menu id="desktop-app-menu" label="Applications" execute="/usr/bin/openbox-menu sparky-pi.menu" />
+  <menu id="root-menu" label="Openbox 3">
+    <item label="File Manager" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/system-file-manager.svg'>
+      <action name="Execute"><command>sparky-fileopen</command>
+      </action>
+    </item>
+    <item label="Terminal" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/xfce-terminal.svg'>
+      <action name="Execute"><command>x-terminal-emulator</command>
+      </action>
+    </item>
+    <item label="Web Browser" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/web-browser.svg'>
+      <action name="Execute"><command>x-www-browser</command>
+      </action>
+    </item>
+    <item label="Run command" icon='/usr/share/icons/ultra-flat-icons/actions/scalable/system-run.svg'>
+      <action name="Execute"><command>gexec</command>
+      </action>
+    </item>
+    <separator />
+    <menu id="desktop-app-menu" />
+    <separator />
+    <menu id="settings" label="Settings">
+      <item label="Panel" icon='/usr/share/icons/hicolor/scalable/apps/tint2conf.svg'>
+        <action name="Execute"><command>tint2conf</command>
+        </action>
+      </item>
+      <item label="ObConf" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/preferences-system.svg'>
+        <action name="Execute"><command>obconf</command>
+        </action>
+      </item>
+      <item label="Reconfigure" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/utilities-run.svg'>
+        <action name="Reconfigure"/>
+      </item>
+      <item label="Restart" icon='/usr/share/icons/ultra-flat-icons/actions/scalable/view-refresh.svg'>
+        <action name="Restart"/>
+      </item>
+    </menu>
+    <separator/>
+    <item label="Lock" icon='/usr/share/icons/ultra-flat-icons/apps/scalable/system-lock-screen.svg'>
+      <action name="Execute"><command>xscreensaver-command -lock</command>
+      </action>
+    </item>
+    <item label="Exit" icon='/usr/share/icons/ultra-flat-icons/actions/scalable/exit.svg'>
+      <action name="Execute"><command>wm-logout</command>
+      </action>
+    </item>
+</menu></openbox_menu>
