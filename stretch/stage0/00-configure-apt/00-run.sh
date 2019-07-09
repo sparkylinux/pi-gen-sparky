@@ -2,7 +2,7 @@
 
 install -m 644 files/sources.list "${ROOTFS_DIR}/etc/apt/"
 install -m 644 files/raspi.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
-install -m 644 files/sparky-stable.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
+install -m 644 files/sparky-oldstable.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
 #install -m 644 files/sparky ${ROOTFS_DIR}"/etc/apt/preferences.d/"
 
 if [ -n "$APT_PROXY" ]; then

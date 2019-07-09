@@ -16,7 +16,7 @@
     <action name="Execute"><execute>remsu sparky-aptus-upgrade</execute></action>
   </item>
   <item label="Synaptic">
-    <action name="Execute"><execute>remsu synaptic</execute></action>
+    <action name="Execute"><execute>synaptic-pkexec</execute></action>
   </item>
   <item label="Terminal emulator">
     <action name="Execute"><execute>x-terminal-emulator</execute></action>
