@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-install -m 644 files/sparky-testing.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
+install -m 644 files/sparky-stable.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
 #install -m 644 files/sparky ${ROOTFS_DIR}"/etc/apt/preferences.d/"
 
 on_chroot apt-key add - < files/sparkylinux.gpg.key

@@ -49,8 +49,8 @@ on_chroot << EOF
 setupcon --force --save-only -v
 EOF
 
-on_chroot << EOF
-usermod --pass='*' root
-EOF
+#on_chroot << EOF
+#usermod --pass='*' root
+#EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
