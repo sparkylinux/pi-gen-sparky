@@ -1,0 +1,7 @@
+### sparky oldstable repository
+### used on sparky based on debian stretch only
+deb https://repo.sparkylinux.org/ core main
+deb-src https://repo.sparkylinux.org/ core main
+deb https://repo.sparkylinux.org/ tyche main
+deb-src https://repo.sparkylinux.org/ tyche main
+
