@@ -1,0 +1,4 @@
+^sep()
+Restart,openbox --restart,openbox
+Lock,xscreensaver-command -lock,system-lock-screen
+Exit,openbox --exit,system-shutdown
