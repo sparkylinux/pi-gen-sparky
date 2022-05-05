@@ -6,6 +6,9 @@ cp -a skel/.su-to-rootrc "${ROOTFS_DIR}/home/pi/"
 rsync -a skel/.config "${ROOTFS_DIR}/home/pi/"
 rsync -a skel/.alsaplayer "${ROOTFS_DIR}/home/pi/"
 cp -a files1/sparky-pi-mime "${ROOTFS_DIR}/usr/bin/"
+if [ ! -d "${ROOTFS_DIR}/etc/xdg/autostart/" ]; then
+mkdir -p "${ROOTFS_DIR}/etc/xdg/autostart/"
+fi
 cp -a files1/sparky-pi-mime.desktop "${ROOTFS_DIR}/etc/xdg/autostart/"
 #cp -a files1/sparky-pi-pswd "${ROOTFS_DIR}/usr/bin/"
 if [ ! -d "${ROOTFS_DIR}/etc/xdg/menus/" ]; then
