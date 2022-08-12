@@ -1,8 +1,8 @@
 ### sparky core repository is used by all sparky editions
-deb https://repo.sparkylinux.org/ core main
-deb-src https://repo.sparkylinux.org/ core main
+deb [signed-by=/usr/share/keyrings/sparky.gpg.key] https://repo.sparkylinux.org/ core main
+deb-src [signed-by=/usr/share/keyrings/sparky.gpg.key] https://repo.sparkylinux.org/ core main
 
 ### sparky stable repository
-deb https://repo.sparkylinux.org/ potolo main
-deb-src https://repo.sparkylinux.org/ potolo main
+deb [signed-by=/usr/share/keyrings/sparky.gpg.key] https://repo.sparkylinux.org/ potolo main
+deb-src [signed-by=/usr/share/keyrings/sparky.gpg.key] https://repo.sparkylinux.org/ potolo main
 
