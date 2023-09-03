@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Sparky Pi
-Comment=Update Mime
-Exec=/usr/bin/sparky-pi-mime
-Terminal=false
-Type=Application
-

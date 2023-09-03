@@ -1,9 +1,0 @@
-#! /bin/bash
-
-sudo dpkg-reconfigure shared-mime-info
-sudo dpkg-reconfigure menu
-cd /home/pi/.config/openbox
-./autostart.sh
-openbox --reconfigure
- 
-exit 0
