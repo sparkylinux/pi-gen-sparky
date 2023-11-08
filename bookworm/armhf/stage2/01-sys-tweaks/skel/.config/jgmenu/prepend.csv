@@ -1,0 +1,7 @@
+@search,,5,5,150,20,3,left,top,auto,#000000 0,Type to Search
+^sep()
+File,sparky-fileopen,system-file-manager
+Web,x-www-browser,web-browser
+Terminal,x-terminal-emulator,utilities-terminal
+Run,gexec,system-run
+^sep()
